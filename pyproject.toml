@@ -1,6 +1,6 @@
 [project]
 name = "avanak"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python client library for Avanak voice message REST API"
 readme = "README.md"
 requires-python = ">=3.8"
