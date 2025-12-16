@@ -4,7 +4,47 @@ version = "0.1.0"
 description = "Python client library for Avanak voice message REST API"
 readme = "README.md"
 requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Hassan Pouralijan", email = "pouralijan@gmail.com" }]
+maintainers = [{ name = "Hassan Pouralijan", email = "pouralijan@gmail.com" }]
+keywords = [
+    "avanak",
+    "voice",
+    "api",
+    "sms",
+    "telephony",
+    "communication",
+    "persian",
+    "farsi",
+    "ivr",
+    "text-to-speech",
+    "tts",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP",
+]
 dependencies = ["requests>=2.25.0", "pydantic>=2.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/pouralijan/avanak-python"
+Documentation = "https://github.com/pouralijan/avanak-python#readme"
+Repository = "https://github.com/pouralijan/avanak-python"
+Issues = "https://github.com/pouralijan/avanak-python/issues"
+Changelog = "https://github.com/pouralijan/avanak-python/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/avanak"]
@@ -14,7 +54,12 @@ requires = ["uv_build"]
 build-backend = "uv_build"
 
 [dependency-groups]
-dev = ["pre-commit>=3.5.0", "ruff>=0.14.9"]
+dev = [
+    "pre-commit>=3.5.0",
+    "pytest>=8.0.0",
+    "pytest-mock>=3.10.0",
+    "ruff>=0.14.9",
+]
 
 [tool.ruff]
 line-length = 100
