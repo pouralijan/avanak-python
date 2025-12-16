@@ -1,0 +1,88 @@
+[project]
+name = "avanak"
+version = "0.1.0"
+description = "Python client library for Avanak voice message REST API"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["requests>=2.25.0", "pydantic>=2.0.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/avanak"]
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pre-commit>=3.5.0", "ruff>=0.14.9"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "C90",
+    "I",
+    "N",
+    "UP",
+    "YTT",
+    "S",
+    "BLE",
+    "FBT",
+    "B",
+    "A",
+    "COM",
+    "C4",
+    "DTZ",
+    "T10",
+    "DJ",
+    "EM",
+    "EXE",
+    "FA",
+    "ISC",
+    "ICN",
+    "G",
+    "INP",
+    "PIE",
+    "T20",
+    "PYI",
+    "PT",
+    "Q",
+    "RSE",
+    "RET",
+    "SLF",
+    "SLOT",
+    "SIM",
+    "TID",
+    "TCH",
+    "INT",
+    "ARG",
+    "PTH",
+    "ERA",
+    "PD",
+    "PGH",
+    "PL",
+    "TRY",
+    "FLY",
+    "NPY",
+    "AIR",
+    "PERF",
+    "FURB",
+    "LOG",
+    "RUF",
+]
+ignore = [
+    "S101",
+    "S104",
+    "COM812",
+    "ISC001",
+    "FBT001",
+    "FBT002",
+    "PLR0913",
+    "UP045",
+    "UP006",
+]
