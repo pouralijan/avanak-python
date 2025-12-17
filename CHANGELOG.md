@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.2] - 2024-12-17
 
+### Added
+- CLI tool integrated into main package with console script entry point
+- All 17 Avanak API endpoints available as CLI commands
+- Token management with environment variables, file storage, and secure prompts
+
 ### Fixed
 - Fixed ruff linting errors in test files with per-file ignores
 - Improved test configuration for better CI/CD pipeline

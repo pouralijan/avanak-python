@@ -64,16 +64,13 @@ print(f"Send Status: {result['Status']}")
 The package includes a command-line tool for quick operations:
 
 ```bash
-# Install with CLI support
-pip install avanak[cli]
+# After installation, use the avanak command directly
+avanak account-status
+avanak send-otp 4 09120000000
+avanak generate-tts "Hello World" "Greeting"
 
-# Or with uv
-uv add avanak click
-
-# Use the CLI
+# Or run as a module
 python -m avanak account-status
-python -m avanak send-otp 4 09120000000
-python -m avanak generate-tts "Hello World" "Greeting"
 ```
 
 ## API Reference

@@ -37,14 +37,10 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Internet :: WWW/HTTP",
 ]
-dependencies = ["requests>=2.25.0", "pydantic>=2.0.0"]
+dependencies = ["requests>=2.25.0", "pydantic>=2.0.0", "click>=8.0.0"]
 
-[project.urls]
-Homepage = "https://github.com/pouralijan/avanak-python"
-Documentation = "https://github.com/pouralijan/avanak-python#readme"
-Repository = "https://github.com/pouralijan/avanak-python"
-Issues = "https://github.com/pouralijan/avanak-python/issues"
-Changelog = "https://github.com/pouralijan/avanak-python/blob/main/CHANGELOG.md"
+[project.scripts]
+avanak = "avanak.cli:cli"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/avanak"]
@@ -138,4 +134,8 @@ ignore = [
     "S106",  # Possible hardcoded password assigned to argument (test tokens)
     "PLR2004",  # Magic value used in comparison (test data values)
     "E501",  # Line too long (test data can be long)
+]
+"src/avanak/cli.py" = [
+    "BLE001",  # Do not catch blind exception (acceptable for CLI error handling)
+    "PLC0415",  # import should be at top-level (base64 import is local for clarity)
 ]
