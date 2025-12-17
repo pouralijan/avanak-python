@@ -1,5 +1,6 @@
 # Avanak
 
+[![CI](https://github.com/pouralijan/avanak-python/actions/workflows/test.yml/badge.svg)](https://github.com/pouralijan/avanak-python/actions/workflows/test.yml)
 [![PyPI version](https://badge.fury.io/py/avanak.svg)](https://pypi.org/project/avanak/)
 [![Python versions](https://img.shields.io/pypi/pyversions/avanak.svg)](https://pypi.org/project/avanak/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
