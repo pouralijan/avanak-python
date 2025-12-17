@@ -1,6 +1,6 @@
 [project]
 name = "avanak"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python client library for Avanak voice message REST API"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -130,4 +130,12 @@ ignore = [
     "PLR0913",
     "UP045",
     "UP006",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*" = [
+    "S105",  # Possible hardcoded password (test tokens are fine)
+    "S106",  # Possible hardcoded password assigned to argument (test tokens)
+    "PLR2004",  # Magic value used in comparison (test data values)
+    "E501",  # Line too long (test data can be long)
 ]
