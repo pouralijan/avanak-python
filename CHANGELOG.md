@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [0.1.2] - 2024-12-17
+
+### Fixed
+- Fixed ruff linting errors in test files with per-file ignores
+- Improved test configuration for better CI/CD pipeline
+
+## [0.1.1] - 2024-12-15
+
+### Changed
+- Version bump for package name conflict in pypi.
+
 ## [0.1.0] - 2024-12-15
 
 ### Added
